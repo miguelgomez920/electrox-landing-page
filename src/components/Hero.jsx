@@ -101,7 +101,7 @@ const Hero = () => {
     //   </div>
     // </section>
 
-    <section id="inicio" className="scroll-mt-20 flex flex-col md:flex-row md:justify-around gap-16 mt-10  ">
+    <section id="inicio" className="scroll-mt-20 flex flex-col md:flex-row md:justify-around gap-16 py-12  ">
       {/* div de eleva tu experiencia */}
       <div className="flex flex-col gap-6 md:w-[50%] ">
         <span className="text-xs sm:text-sm text-primary tracking-[0.25em]">

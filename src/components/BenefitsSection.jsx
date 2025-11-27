@@ -52,7 +52,7 @@ const Benefits = () => {
         </div>
       </section> */}
 
-      <section id="ofertas" className="scroll-mt-20 flex flex-col md:flex-row gap-10  mt-15 p-7 ">
+      <section id="ofertas" className="scroll-mt-20 flex flex-col md:flex-row gap-5  py-12  ">
         <div className="flex flex-col md:w-[33%] gap-3 ">
           <h2 className="text-2xl font-bold">¿Qué ganaras con ElectroX?</h2>
           <p className="text-sm text-gray-300">
@@ -71,21 +71,21 @@ const Benefits = () => {
             <span className="w-fit text-xs bg-[#2A4471] rounded-full px-2 py-1">
               Envíos
             </span>
-            <h1 className=" font-semibold ">Envíos 24h</h1>
-            <p className=" text-xs">Llegan más rápido que la competencia</p>
+            <h1 className="z-10  font-semibold ">Envíos 24h</h1>
+            <p className="z-10  text-xs">Llegan más rápido que la competencia</p>
           </div>
 
           <div className="relative overflow-hidden flex-1  flex flex-col  gap-2  bg-linear-to-br from-fuchsia-500/20 to-fuchsia-500/5 border border-white/10 rounded-xl p-3 ">
             <img
               src={securityImg}
               alt="security"
-              className="absolute -right-5 top-1/2 -translate-y-1/2 w-20 rotate-[10deg] opacity-90"
+              className="absolute -right-5  top-1/2  -translate-y-1/2 w-20 rotate-[10deg] opacity-90"
             />
             <span className="w-fit text-xs bg-[#681A73] rounded-full px-2 py-1">
               Seguridad
             </span>
-            <h1 className=" font-semibold ">Pagos garantizados</h1>
-            <p className=" text-xs">Protección avanzada en cada transacción.</p>
+            <h1 className="z-10 font-semibold ">Pagos garantizados</h1>
+            <p className="z-10 text-xs">Protección avanzada en cada transacción.</p>
           </div>
 
           <div className="relative overflow-hidden flex-1  flex flex-col gap-2  bg-linear-to-br from-cyan-400/20 to-cyan-400/5 border border-white/10 rounded-xl p-3 ">
@@ -97,8 +97,8 @@ const Benefits = () => {
             <span className="w-fit text-xs bg-[#096271] rounded-full px-2 py-1">
               Soporte
             </span>
-            <h1 className=" font-semibold ">Garantía extendida</h1>
-            <p className=" text-xs">Te acompañamos en cada paso.</p>
+            <h1 className="z-10  font-semibold ">Garantía extendida</h1>
+            <p className="z-10  text-xs">Te acompañamos en cada paso.</p>
           </div>
         </div>
       </section>

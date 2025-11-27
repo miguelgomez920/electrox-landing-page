@@ -4,12 +4,12 @@ import Hero from "./components/Hero";
 import CategorySection from "./components/CategorySection";
 import ProductsSection from "./components/ProductsSection";
 import Benefits from "./components/BenefitsSection";
+import Peticion from "./components/Peticion";
+import Peticion2 from "./components/Peticion2";
 
 function App() {
   // ===== DATA =====
-  
  
-
   const testimonials = [
     {
       id: 1,
@@ -42,6 +42,8 @@ function App() {
         <Benefits/>
         <CategorySection/>
         <ProductsSection/>
+        {/* <Peticion/>
+        <Peticion2/> */}
 
  
         {/* COLLECTION */}
