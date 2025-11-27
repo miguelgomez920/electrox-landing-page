@@ -1,0 +1,18 @@
+@import "tailwindcss"; 
+@custom-variant hover (&:hover);
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-primary: #4C8BF5;
+  --color-dark: #050509;
+  --color-dark-card: #101018;
+}
+
+/* Estilos globales */
+body {
+  @apply bg-dark text-white font-sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
