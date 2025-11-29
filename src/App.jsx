@@ -35,7 +35,7 @@ function App() {
   // ===== RETURN UI =====
   return (
     // bg-gradient-to-b from-black via-[#0b0b0b] to-black
-    <div className="min-h-screen bg-gradient-to-b from-black via-[#0b0b0b] to-black">
+    <div className="min-h-screen bg-linear-to-b from-black via-[#0b0b0b] to-black">
       <Navbar/> 
       <main className="max-w-6xl mx-auto px-4 pb-20">
         <Hero/>
@@ -154,7 +154,7 @@ function App() {
        
       
         <section id="contacto" className="py-16">
-  <div className="grid sm:grid-cols-2 gap-6 bg-darkCard bg-gradient-to-r from-primary/20 via-darkCard to-black border border border-white/10 p-8 rounded-3xl">
+  <div className="grid sm:grid-cols-2 gap-6 bg-darkCard bg-gradient-to-r from-primary/20 via-darkCard to-black  border border-white/10 p-8 rounded-3xl">
 
     {/* Texto */}
     <div className="space-y-2">
@@ -183,6 +183,8 @@ function App() {
      
 
       </main>
+
+      
 
     
 

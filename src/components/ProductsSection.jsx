@@ -2,7 +2,9 @@ import { products } from "../data/products";
 
 const ProductsSection = () => {
   return (
-    <section id="productos" className="py-12 space-y-6">
+
+    <>
+    {/* <section id="productos" className="py-12 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
           <h2 className="text-2xl font-semibold">Productos destacados</h2>
@@ -52,7 +54,52 @@ const ProductsSection = () => {
           </article>
         ))}
       </div>
-    </section>
+    </section> */}
+
+    <section id="productos" className="scroll-mt-10 py-12 space-y-6">
+
+      <div className="flex justify-between">
+        <div>
+          <h2 className="text-2xl font-semibold">Productos destacados</h2>
+          <p className="text-sm text-neutral-300">Lo más recomendado para actualizar tu setup</p>        
+        </div>
+        <button className="text-primary text-sm hover:underline pr-12">Ver todo el catálogo</button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-5 lg:gap-15 sm:grid-cols-2 md:grid-cols-3  md:px-5 lg:px-10">
+        {products.map((product)=>(
+      
+          <div key={product.id} className="flex flex-col gap-4 rounded-2xl bg-neutral-950 border border-white/10 p-4 hover:bg-neutral-900 hover:border-primary/70 hover:-translate-y-1 transition">
+            <div className=" flex justify-center items-center h-34 text-4xl rounded-xl  bg-linear-to-r from-primary to-neutral-500">
+                  <img className="h-full w-full object-contain " src={product.img} alt={product.name} />
+            </div>
+
+            <div>
+              <h3 className="font-semibold">{product.name}</h3>
+              <p className="text-[12px] text-neutral-400">{product.category}</p>
+              <p className="text-sm text-neutral-300 ">{product.description}</p>
+            </div>
+
+            <div className="flex flex-wrap gap-1 text-neutral-400">
+              {product.tags.map((tags, index)=>(
+                <span key={index} className="text-[11px] px-2 py-[2px] bg-neutral-800 rounded-full">{tags}</span>
+              ))}
+ 
+            </div>
+
+            <div className="flex justify-between ">
+              <p className="font-semibold text-lg">{product.price}</p>
+              <button className="text-[12px] text-black font-semibold bg-primary rounded-full px-4 py-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Ver producto</button>
+            </div>
+
+          </div>
+
+        )) }
+ 
+      </div>
+   </section>
+
+     </>
   );
 };
 

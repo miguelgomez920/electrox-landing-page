@@ -50,7 +50,7 @@ function Navbar() {
           <div>
             <ul className="hidden md:flex gap-5 "> 
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#inicio">Inicio</a></li>
-              <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#">Productos</a></li>
+              <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#productos">Productos</a></li>
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#ofertas">Ofertas</a></li>
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#">Contacto</a></li>
             </ul>

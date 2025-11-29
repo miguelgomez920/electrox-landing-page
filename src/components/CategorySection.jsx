@@ -48,13 +48,13 @@ const CategorySection = () => {
       <div className="flex flex-col sm:flex-row justify-evenly gap-3 mt-10 px-4 ">
 
         { categories.map((cat)=>(
-        <div key={cat.id} className="group flex-1 flex flex-col items-center gap-5 p-5 py-7 bg-linear-to-br from-white/5 to-darkCard border border-white/10 rounded-3xl hover:from-primary/20 hover:to-darkCard hover:border-primary/50 hover:-translate-y-1 transition">
+        <div key={cat.id} className="group flex-1 flex flex-col items-center  gap-5 p-5 py-7 bg-linear-to-br from-white/5 to-darkCard border border-white/10 rounded-3xl hover:from-primary/20 hover:to-darkCard hover:border-primary/50 hover:-translate-y-1 transition">
           <div className="flex justify-center w-40 bg-neutral-950 p-3 border border-white/10 rounded-2xl ">
-            <img className="w-15 h-15 object-contain transition-transform duration-300 group-hover:rotate-13 group-hover:scale-120  " src={cat.img} alt="headset" />
+            <img className=" w-17 h-17 object-contain transition-transform duration-300 group-hover:rotate-13 group-hover:scale-120  " src={cat.img} alt="headset" />
           </div>
-          <div className="text-center">
+          <div className="flex flex-col items-center ">
             <h3 className="text-[1.1rem] font-semibold">{cat.name}</h3>
-            <p className="text-sm text-neutral-400">{cat.description}</p>
+            <p className=" text-sm text-neutral-400">{cat.description}</p>
           </div>
           <button className="text-primary text-sm font-medium  group-hover:underline group-hover:translate-x-1 transition">Ver más → </button>
         </div>
@@ -64,6 +64,8 @@ const CategorySection = () => {
 
 
     </section>
+
+    
 
     </>
 

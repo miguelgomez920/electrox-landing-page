@@ -152,7 +152,7 @@ const Hero = () => {
         {/* Glow morado externo */}
         <div className="absolute -inset-1 rounded-4xl bg-linear-to-r from-primary/40 via-fuchsia-500/30 to-cyan-400/30 blur-2xl opacity-60"></div>
 
-        <div className="relative  flex flex-col border border-white/10  rounded-4xl gap-5 p-4">
+        <div className="relative  flex flex-col  gap-5 p-4">
           <div className="flex gap-5 justify-between">
             <span className="text-xs text-gray-400">
               TU ESCRITORIO · TU ESTILO
