@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import CategorySection from "./components/CategorySection";
 import ProductsSection from "./components/ProductsSection";
 import Benefits from "./components/BenefitsSection";
+import CollectionSection from "./components/CollectionSection";
+import CollectionSection2 from "./components/CollectionSection2";
 import Peticion from "./components/Peticion";
 import Peticion2 from "./components/Peticion2";
 
@@ -44,73 +46,8 @@ function App() {
         <ProductsSection/>
         {/* <Peticion/>
         <Peticion2/> */}
-
- 
-        {/* COLLECTION */}
-        <section className="py-10">
-  <div className="text-center mb-8 space-y-2">
-    <h2 className="text-2xl font-semibold">Colección Setup Pro</h2>
-    <p className="text-sm text-gray-300">
-      Un solo pack para cubrir audio, escritura y precisión.
-    </p>
-  </div>
-
-  <div className="max-w-3xl mx-auto rounded-3xl bg-linear-to-br from-primary/20 via-darkCard to-black border border-white/10 p-6 sm:p-8 space-y-5">
-    <p className="text-xs uppercase tracking-[0.25em] text-gray-400 text-center">
-      Bundle destacado
-    </p>
-
-    <div className="grid sm:grid-cols-[1.2fr,1fr] gap-6 items-center">
-      {/* Texto */}
-      <div className="space-y-3 text-left">
-        <h3 className="text-xl font-semibold">
-          Pack completo para Streaming y Gaming
-        </h3>
-        <p className="text-sm text-gray-200">
-          Diseñado para quienes exigen comodidad y rendimiento en cada sesión,
-          ya sea en directos, videojuegos o trabajo híbrido.
-        </p>
-        <ul className="text-sm text-gray-200 list-disc list-inside space-y-1">
-          <li>Audífonos de estudio con escena estéreo detallada.</li>
-          <li>Teclado mecánico compacto para ganar espacio de mouse.</li>
-          <li>Mouse ligero con sensor de 16000 DPI para precisión milimétrica.</li>
-        </ul>
-      </div>
-
-      {/* Visual */}
-      <div className="space-y-3">
-        <div className="grid grid-cols-3 gap-3">
-          <div className="h-20 rounded-2xl bg-gradient-to-br from-white/5 to-primary/25 flex items-center justify-center text-3xl">
-            🎧
-          </div>
-          <div className="h-20 rounded-2xl bg-gradient-to-br from-white/5 to-fuchsia-500/25 flex items-center justify-center text-3xl">
-            ⌨️
-          </div>
-          <div className="h-20 rounded-2xl bg-gradient-to-br from-white/5 to-cyan-400/25 flex items-center justify-center text-3xl">
-            🖱️
-          </div>
-        </div>
-        <p className="text-xs text-gray-300">
-          Ideal para setups compactos donde cada centímetro importa.
-        </p>
-      </div>
-    </div>
-
-    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
-      <p>
-        <span className="text-xs text-gray-400 line-through mr-2">
-          $229.99
-        </span>
-        <span className="text-xl font-semibold">$199.99</span>
-        <span className="ml-2 text-xs text-emerald-400">Ahorras $30.00</span>
-      </p>
-      <button className="text-sm bg-primary px-5 py-2 rounded-full font-medium hover:scale-105 transition">
-        Añadir bundle
-      </button>
-    </div>
-  </div>
-        </section>
-
+  {/* <CollectionSection/> */}
+        <CollectionSection2 productIDs={[5, 2, 3, 1, 4, 6]} />
 
      
         {/* TESTIMONIALS */}

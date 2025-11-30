@@ -6,7 +6,6 @@ import logitechG733Img from "../assets/Products/logitechG733.png";
 import logitechC920Img from "../assets/Products/logitechC920.png";
 
 
-
 export const products = [
   {
     id: 1,
@@ -17,6 +16,12 @@ export const products = [
       "12 drivers híbridos, escenario sonoro amplio y excelente separación de frecuencias.",
     tags: ["Hi-Fi", "Drivers híbridos", "Cable desmontable"],
     price: 79.99,
+    specs: [
+      "12 drivers híbridos para una respuesta detallada",
+      "Escenario sonoro amplio con buena separación",
+      "Cable desmontable de 2 pines",
+      "Diseño ergonómico para uso prolongado"
+    ]
   },
 
   {
@@ -28,6 +33,13 @@ export const products = [
       "Teclado mecánico 60%, switches intercambiables y conectividad Bluetooth + cable.",
     tags: ["60%", "Hot-Swap", "RGB"],
     price: 109.9,
+    specs: [
+      "Formato 60% para ganar espacio",
+      "Switches mecánicos (según versión)",
+      "Bluetooth + USB-C",
+      "Hot-swap en varios modelos",
+      "Ideal para setups compactos"
+    ]
   },
 
   {
@@ -39,6 +51,13 @@ export const products = [
       "Mouse gamer con sensor de alta precisión, 12 botones programables y memoria interna.",
     tags: ["16000 DPI", "Programable", "Ergonómico"],
     price: 54.9,
+    specs: [
+      "Sensor de alto DPI ajustable (hasta 16000)",
+      "12 botones laterales programables",
+      "Memoria interna para perfiles",
+      "Ideal para MMO y productividad",
+      "Peso ligeramente ajustable"
+    ]
   },
 
   {
@@ -50,6 +69,13 @@ export const products = [
       "Micrófono USB plug & play ideal para streaming, clases virtuales y grabación de voz.",
     tags: ["USB", "Plug & Play", "Streaming"],
     price: 59.9,
+    specs: [
+      "Patrón cardioide para reducir ruido lateral",
+      "Conexión USB plug & play",
+      "Perilla de ganancia integrada",
+      "Ideal para streaming, clases y llamadas",
+      "Construcción metálica resistente"
+    ]
   },
 
   {
@@ -61,6 +87,13 @@ export const products = [
       "Audífonos gamer inalámbricos con sonido surround, RGB y micrófono Blue VO!CE.",
     tags: ["Wireless", "RGB", "Surround"],
     price: 129.9,
+    specs: [
+      "Sonido envolvente y ligero",
+      "Almohadillas cómodas para sesiones largas",
+      "Conectividad inalámbrica de baja latencia",
+      "Micrófono con tecnología Blue VO!CE",
+      "RGB personalizable en las copas"
+    ]
   },
 
   {
@@ -72,5 +105,12 @@ export const products = [
       "Cámara web Full HD 1080p con micrófonos estéreo y enfoque automático.",
     tags: ["1080p", "Autofocus", "Streaming"],
     price: 89.9,
-  },
+    specs: [
+      "Resolución Full HD 1080p nativa",
+      "Lentes de vidrio con autofocus",
+      "Micrófonos estéreo integrados",
+      "Corrección automática de luz",
+      "Amplio campo de visión (78° aprox.)"
+    ]
+  }
 ];

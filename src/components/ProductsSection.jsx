@@ -58,12 +58,12 @@ const ProductsSection = () => {
 
     <section id="productos" className="scroll-mt-10 py-12 space-y-6">
 
-      <div className="flex justify-between">
-        <div>
+      <div className="flex gap-3 justify-between">
+        <div >
           <h2 className="text-2xl font-semibold">Productos destacados</h2>
           <p className="text-sm text-neutral-300">Lo más recomendado para actualizar tu setup</p>        
         </div>
-        <button className="text-primary text-sm hover:underline pr-12">Ver todo el catálogo</button>
+        <button className=" text-primary pt-6 text-xs md:text-sm hover:underline md:pr-12">Ver todo el catálogo</button>
       </div>
 
       <div className="grid grid-cols-1 gap-5 lg:gap-15 sm:grid-cols-2 md:grid-cols-3  md:px-5 lg:px-10">
@@ -87,7 +87,7 @@ const ProductsSection = () => {
  
             </div>
 
-            <div className="flex justify-between ">
+            <div className="flex justify-between mt-auto">
               <p className="font-semibold text-lg">{product.price}</p>
               <button className="text-[12px] text-black font-semibold bg-primary rounded-full px-4 py-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Ver producto</button>
             </div>
