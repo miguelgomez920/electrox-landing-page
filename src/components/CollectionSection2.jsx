@@ -263,10 +263,10 @@ function ProductCard({ product }) {
 
 function ProductCard2({ product }) {
   return (
-    <div key={product.id} className="relative group flex flex-row md:flex-col items-center justify-center  group bg-white/10 rounded-2xl gap-2 px-2 py-3">
-      <img className="h-19 group-hover:scale-105 transition-transform duration-200" src={product.img} alt={product.name} />
-      <div>
-        <p className="text-[11px] text-gray-200 text-center mt-auto">{product.name}</p>
+    <div className="relative group flex flex-row md:flex-col items-center justify-center  bg-white/10 rounded-2xl gap-2 px-2 py-3">
+      <img className="h-19 group-hover:scale-105 transition-transform duration-200 drop-shadow" src={product.img} alt={product.name} />
+      <div className="flex flex-col gap-2">
+        <p className="text-[11px] text-gray-200 text-center ">{product.name}</p>
         <span className="w-fit text-[10px] px-2 py-0.5 rounded-full bg-black/40 text-gray-300 mt-auto">{product.tags?.[0] ?? "Producto"}</span>
       </div>
 
@@ -301,71 +301,6 @@ export default function CollectionSection2({ productIDs = [] }) {
 
     <>
 
-    <section className="py-20 bg-black/90">
-      <div className="max-w-4xl mx-auto relative px-4">
-
-        {/* Tarjeta principal */}
-        <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-xl">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-
-            {/* Visual productos */}
-            <div className="flex flex-col items-center md:items-start gap-5">
-              <div className="grid grid-cols-3 gap-4 w-full">
-
-                {visibleProducts.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-
-              </div>
-
-              <p className="text-[11px] text-gray-400 text-center md:text-left">
-                Selección curada para streaming, gaming y trabajo híbrido.
-              </p>
-            </div>
-
-            {/* Texto */}
-            <div className="space-y-4">
-              <p className="text-xs uppercase tracking-[0.25em] text-primary/80">
-                Setup Pro — Ultimate Pack
-              </p>
-
-              <h3 className="text-xl sm:text-2xl font-bold">
-                Un solo bundle para completar tu escritorio
-              </h3>
-
-              <p className="text-sm text-gray-300">
-                Combina audio de estudio, escritura compacta y precisión
-                milimétrica en un pack pensado para creadores, gamers y
-                profesionales.
-              </p>
-
-              <div className="border-l border-white/10 pl-4 space-y-1 text-sm text-gray-300">
-                <p>• Logitech G733 — sonido envolvente y cómodo.</p>
-                <p>• Redragon K530 — teclado 60% que libera espacio.</p>
-                <p>• Redragon M901 — mouse gamer de alto DPI.</p>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2 pt-2 text-[11px] text-gray-300">
-                <span className="px-2 py-1 rounded-full bg-white/5">Streaming</span>
-                <span className="px-2 py-1 rounded-full bg-white/5">Gaming</span>
-                <span className="px-2 py-1 rounded-full bg-white/5">Home Office</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        {/* Tarjeta flotante precio */}
-        <div className="absolute bottom-0 right-0 translate-y-1/3 bg-black/85 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl w-[210px]">
-          <p className="text-2xl font-bold leading-none">$199.99</p>
-          <p className="text-gray-400 text-xs line-through mt-1">$229.99</p>
-          <button className="mt-3 w-full bg-primary py-1.5 rounded-full text-sm hover:scale-105 transition">
-            Añadir
-          </button>
-        </div>
-      </div>
-    </section>
-
      <section className="flex flex-col gap-4 py-12 px-2 md:px-4 lg:px-25">
             <div className="flex flex-col gap-2 justify-center items-center">
                 <h2 className="text-2xl font-semibold">Colección Setup Pro</h2>
@@ -374,16 +309,16 @@ export default function CollectionSection2({ productIDs = [] }) {
 
             <div className="relative flex flex-col md:flex-row gap-6 p-8 bg-white/5 border border-white/10 rounded-3xl ">
 
-                <div className="flex flex-col gap-3">
-                    <div className="grid gap-4 grid-cols-1 md:grid-cols-3  ">
-                    {products.map((product)=>(
-                      <ProductCard2 product={product}/>
+                <div className="md:w-[50%] flex flex-col gap-3 justify-center items-center">
+                    <div className="grid gap-4 grid-cols-1 md:grid-cols-3 ">
+                    {visibleProducts.map((product)=>(
+                      <ProductCard2 key={product.id} product={product}/>
                     ))}
                     </div>
                     <p className="text-xs text-neutral-400">Selección curada para streaming, gaming y trabajo híbrido</p>
                 </div>
 
-                <div className="flex flex-col justify-center gap-4">
+                <div className="md:w-[40%] flex flex-col justify-center gap-4 py-12">
                     <p className="text-primary text-xs tracking-[0.25em]">SETUP PRO - ULTIMATE PACK</p>
                     <h3 className="font-bold text-2xl">Un solo bundle para completar tu escritorio</h3>
                     <p className="text-neutral-300 text-sm">Combina audio de estudio, escritura compacta y precisiónmilimétrica en un pack pensado para creadores, gamers y profesionales.</p>
@@ -394,14 +329,17 @@ export default function CollectionSection2({ productIDs = [] }) {
                     </ul>
                 </div>
 
-                <div className="absolute  -bottom-4 -right-4  md:-right-4 translate-y-14 md:translate-y-8 h-25 w-40  md:h-30 md:w-50 p-2 md:p-4 border border-white/10 rounded-2xl bg-black">
+                <div className="absolute -bottom-4 -right-4  md:-right-4 translate-y-6 md:translate-y-8 h-25 w-40  md:h-30 md:w-50 p-2 md:p-4 border border-white/10 rounded-2xl bg-black">
                       <p className="text-xl md:text-2xl font-bold">$199.99</p>
                       <p className="text-neutral-400 text-[11px] md:text-xs line-through">$229.99</p>
                       <button className="bg-primary rounded-full text-xs md:text-[16px] font-semibold py-1 w-full mt-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Añadir</button>
                 </div>
             </div>
+
+
      </section>
 
+            <img className="h-10  bg-amber-300" src={products[0].img} alt="" />
         {/* prueba imagen */}
         {/* <div className="mt-20 mb-100">
 

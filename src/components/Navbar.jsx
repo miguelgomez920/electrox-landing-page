@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function Navbar() {
 
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(true);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);

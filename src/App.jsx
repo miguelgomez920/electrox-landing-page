@@ -37,7 +37,7 @@ function App() {
   // ===== RETURN UI =====
   return (
     // bg-gradient-to-b from-black via-[#0b0b0b] to-black
-    <div className="min-h-screen bg-linear-to-b from-black via-[#0b0b0b] to-black">
+    <div className="min-h-screen bg-linear-to-b from-black via-[#0b0b0b] to-black overflow-x-hidden">
       <Navbar/> 
       <main className="max-w-6xl mx-auto px-4 pb-20">
         <Hero/>
@@ -47,7 +47,7 @@ function App() {
         {/* <Peticion/>
         <Peticion2/> */}
   {/* <CollectionSection/> */}
-        <CollectionSection2 productIDs={[5, 2, 3, 1, 4, 6]} />
+        <CollectionSection2 productIDs={[5, 2, 3]} />
 
      
         {/* TESTIMONIALS */}
