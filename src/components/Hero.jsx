@@ -104,15 +104,15 @@ const Hero = () => {
     <section id="inicio" className="scroll-mt-20 flex flex-col md:flex-row md:justify-around gap-16 py-12  ">
       {/* div de eleva tu experiencia */}
       <div className="flex flex-col gap-6 md:w-[50%] ">
-        <span className="text-xs sm:text-sm text-primary tracking-[0.25em]">
+        <span className="text-[13px] sm:text-sm text-primary tracking-[0.25em]">
           SETUP · AUDIO · PERIFÉRICOS
         </span>
-        <h1 className="text-2xl sm:text-4xl md:text-5xl font-semibold ">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold ">
           Eleva tu experiencia con{" "}
           <span className="text-primary">dispositivos electrónicos </span>
           diseñados para rendir.
         </h1>
-        <p className="text-sm sm:text-[1rem] text-neutral-400">
+        <p className="text-[15px] sm:text-[1rem] text-neutral-400">
           Audífonos, teclados mecánicos, mouses y accesorios para que tu setup
           se vea y suene como siempre quisiste. Calidad seleccionada y envío
           rápido.
@@ -154,10 +154,10 @@ const Hero = () => {
 
         <div className="relative  flex flex-col  gap-5 p-4">
           <div className="flex gap-5 justify-between">
-            <span className="text-xs text-gray-400">
+            <span className="text-sm text-gray-400">
               TU ESCRITORIO · TU ESTILO
             </span>
-            <span className="text-xs">
+            <span className="text-sm">
               Envíos a <span className="text-primary">Colombia</span>
             </span>
           </div>
@@ -209,16 +209,16 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex gap-10 justify-between ">
-            <div >
-              <h1 className="text-xs">Entrega segura</h1>
-              <p className="text-xs text-neutral-400">
+          <div className="flex gap-5  justify-between  ">
+            <div  >
+              <h1 className="text-sm">Entrega segura</h1>
+              <p className="text-sm text-neutral-400">
                 Empaque protegido y rastreo
               </p>
             </div>
-            <div >
-              <h1 className="text-xs text-green-400 ">Pagos seguros</h1>
-              <p className="text-xs text-neutral-400 ">
+            <div className="pl-15 lg:pl-0" >
+              <h1 className="text-sm text-green-400  ">Pagos seguros</h1>
+              <p className="text-sm text-neutral-400 ">
                 Tus datos siempre protegidos
               </p>
             </div>
