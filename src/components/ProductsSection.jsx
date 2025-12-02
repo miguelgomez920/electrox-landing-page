@@ -60,10 +60,10 @@ const ProductsSection = () => {
 
       <div className="flex gap-3 justify-between">
         <div >
-          <h2 className="text-2xl font-semibold">Productos destacados</h2>
-          <p className="text-sm text-neutral-300">Lo más recomendado para actualizar tu setup</p>        
+          <h2 className="text-3xl font-semibold">Productos destacados</h2>
+          <p className="text-[15px] text-neutral-300">Lo más recomendado para actualizar tu setup</p>        
         </div>
-        <button className=" text-primary pt-6 text-xs md:text-sm hover:underline md:pr-12">Ver todo el catálogo</button>
+        <button className=" text-primary pt-6 text-[13px] md:text-sm hover:underline md:pr-12">Ver todo el catálogo</button>
       </div>
 
       <div className="grid grid-cols-1 gap-5 lg:gap-15 sm:grid-cols-2 md:grid-cols-3  md:px-5 lg:px-10">
@@ -82,14 +82,14 @@ const ProductsSection = () => {
 
             <div className="flex flex-wrap gap-1 text-neutral-400">
               {product.tags.map((tags, index)=>(
-                <span key={index} className="text-[11px] px-2 py-[2px] bg-neutral-800 rounded-full">{tags}</span>
+                <span key={index} className="text-[12px] px-2 py-[2px] bg-neutral-800 rounded-full">{tags}</span>
               ))}
  
             </div>
 
             <div className="flex justify-between mt-auto">
-              <p className="font-semibold text-lg">{product.price}</p>
-              <button className="text-[12px] text-black font-semibold bg-primary rounded-full px-4 py-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Ver producto</button>
+              <p className="font-semibold text-lg">$ {product.price}</p>
+              <button className="text-[13px] text-black font-semibold bg-primary rounded-full px-4 py-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Ver producto</button>
             </div>
 
           </div>

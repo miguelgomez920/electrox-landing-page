@@ -41,7 +41,7 @@ const CategorySection = () => {
 
       <div className="text-center">
         <h2 className="text-3xl font-semibold">Explora por categorías</h2>
-        <p className="text-sm text-neutral-400 mt-4">Todo lo que necesitas para mejorar tu experiencia.</p>
+        <p className="text-[15px] text-neutral-400 mt-4">Todo lo que necesitas para mejorar tu experiencia.</p>
       </div>
 
 
@@ -54,7 +54,7 @@ const CategorySection = () => {
           </div>
           <div className="flex flex-col items-center ">
             <h3 className="text-[1.1rem] font-semibold">{cat.name}</h3>
-            <p className=" text-sm text-neutral-400">{cat.description}</p>
+            <p className="text-[15px] text-neutral-400">{cat.description}</p>
           </div>
           <button className="text-primary text-sm font-medium  group-hover:underline group-hover:translate-x-1 transition">Ver más → </button>
         </div>
