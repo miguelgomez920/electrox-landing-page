@@ -52,7 +52,7 @@ const Benefits = () => {
         </div>
       </section> */}
 
-      <section id="ofertas" className="scroll-mt-20 flex flex-col md:flex-row gap-5  py-12  ">
+      <section id="ofertas" className="scroll-mt-10 flex flex-col md:flex-row gap-5  py-12  ">
         <div className="flex flex-col md:w-[33%] gap-3 ">
           <h2 className="text-3xl font-bold">¿Qué ganaras con ElectroX?</h2>
           <p className="text-[15px] text-gray-300">
