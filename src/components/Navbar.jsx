@@ -52,7 +52,7 @@ function Navbar() {
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#inicio">Inicio</a></li>
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#productos">Productos</a></li>
               <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#ofertas">Ofertas</a></li>
-              <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#">Contacto</a></li>
+              <li className="text-sm text-neutral-300 hover:text-primary font-semibold transition"><a href="#contacto">Contacto</a></li>
             </ul>
           </div>
           <div className="hidden md:flex gap-3 items-center">
@@ -69,9 +69,9 @@ function Navbar() {
           <div className="fixed w-full top-14 z-40 flex flex-col justify-center items-center gap-3 bg-neutral-900/60 backdrop-blur border-b border-neutral-500 py-3 ">
              <ul className="flex flex-col gap-3 py-3 text-[18px] "> 
                 <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#inicio">Inicio</a></li>
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#">Productos</a></li>
+                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#productos">Productos</a></li>
                 <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#ofertas">Ofertas</a></li>
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#">Contacto</a></li>
+                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#contacto">Contacto</a></li>
              </ul>
 
             <div className="flex gap-3">
