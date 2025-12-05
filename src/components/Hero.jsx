@@ -141,7 +141,7 @@ const Hero = () => {
             <p className="text-sm text-neutral-400">Envíos rápidos</p>
           </div>
           <div>
-            <h1 className="text-sm">4.9⭐</h1>
+            <h1 className="text-sm">4.9 ⭐</h1>
             <p className="text-sm text-neutral-400">Calificación promedio</p>
           </div>
         </div>
@@ -208,6 +208,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          {/* transparente */}
 
           <div className="flex gap-5  justify-between  ">
             <div  >

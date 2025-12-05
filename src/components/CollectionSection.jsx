@@ -329,11 +329,15 @@ export default function CollectionSection2({ productIDs = [] }) {
                     </ul>
                 </div>
 
-                <div className="absolute -bottom-4 -right-4  md:-right-4 translate-y-6 md:translate-y-8 h-25 w-40  md:h-30 md:w-50 p-2 md:p-4 border border-white/10 rounded-2xl bg-black">
+                <div className="absolute -bottom-4 -right-4  md:-right-4 translate-y-6 md:translate-y-8 h-25 w-40 
+                 md:h-30 md:w-50 p-2 md:p-4 border border-white/10 rounded-2xl bg-linear-to-br from-slate-900  via-black to-primary
+                 shadow-[0_18px_45px_rgba(0,0,0,0.85)] -rotate-6 hover:rotate-1 
+                 transition-transform duration-300 ">
                       <p className="text-xl md:text-2xl font-bold">$199.99</p>
                       <p className="text-neutral-400 text-[12px] md:text-xs line-through">$229.99</p>
                       <button className="bg-primary rounded-full text-[13px] md:text-[15px] font-semibold py-1 w-full mt-2 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition">Añadir</button>
                 </div>
+
             </div>
 
 

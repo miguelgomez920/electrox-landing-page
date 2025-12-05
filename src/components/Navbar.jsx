@@ -1,7 +1,7 @@
 
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function Navbar() {
 
@@ -10,6 +10,12 @@ function Navbar() {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
+
+   useEffect(() => {
+        const handleScroll = () => setMobileDrawerOpen(false);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+        }, []);
 
   return (
 
@@ -66,18 +72,23 @@ function Navbar() {
     </header>
 
         {mobileDrawerOpen && (
-          <div className="fixed w-full top-14 z-40 flex flex-col justify-center items-center gap-3 bg-neutral-900/60 backdrop-blur border-b border-neutral-500 py-3 ">
-             <ul className="flex flex-col gap-3 py-3 text-[18px] "> 
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#inicio">Inicio</a></li>
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#productos">Productos</a></li>
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#ofertas">Ofertas</a></li>
-                <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#contacto">Contacto</a></li>
-             </ul>
+          <div
+              className="fixed inset-0 z-40 "
+              onClick={() => setMobileDrawerOpen(false)}
+            >
+              <div onClick={(e) => e.stopPropagation()} className="fixed w-full top-14 z-40 flex flex-col justify-center items-center gap-3 bg-neutral-900/60 backdrop-blur border-b border-neutral-500 py-3 ">
+                <ul className="flex flex-col gap-3 py-3 text-[18px] "> 
+                    <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#inicio" onClick={() => setMobileDrawerOpen(false)}>Inicio</a></li>
+                    <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#productos" onClick={() => setMobileDrawerOpen(false)}>Productos</a></li>
+                    <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#ofertas" onClick={() => setMobileDrawerOpen(false)}>Ofertas</a></li>
+                    <li className=" text-neutral-300 hover:text-primary font-semibold transition"><a href="#contacto" onClick={() => setMobileDrawerOpen(false)}>Contacto</a></li>
+                </ul>
 
-            <div className="flex gap-3">
-                <button className="text-[18px] text-neutral-300 hover:text-primary" href="#">Iniciar sesión</button>
-            <button className="text-[18px] font-semibold bg-primary py-2 px-4 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition" href="#">Crear cuenta</button>
-            </div>
+                <div className="flex gap-3">
+                    <button className="text-[18px] text-neutral-300 hover:text-primary" href="#">Iniciar sesión</button>
+                <button className="text-[18px] font-semibold bg-primary py-2 px-4 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-primary/40 transition" href="#">Crear cuenta</button>
+                </div>
+              </div>
           </div>
         )}
 

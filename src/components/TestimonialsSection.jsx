@@ -57,12 +57,12 @@ const TestimonialsSection = () => {
         /* Botones base */
         .swiper-button-next, .swiper-button-prev {
           color: white;
-          width: 45px;
-          height: 45px;
+          width: 40px;
+          height: 40px;
           border-radius: 9999px;
           background: rgba(0,0,0,0.45);
           backdrop-filter: blur(6px);
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 2px solid rgba(255,255,255,0.2);
           transition: 0.2s ease-in-out;
         }
         /* Hover */
@@ -73,14 +73,17 @@ const TestimonialsSection = () => {
         /* Iconos más gruesos */
         .swiper-button-next::after,
         .swiper-button-prev::after {
-          font-size: 22px;
+          font-size: 20px;
           font-weight: bold;
+         
         }
         `}
       </style>
 
 
 
+
+      
 
       <Swiper
           modules={[Navigation, Pagination, Autoplay]}
