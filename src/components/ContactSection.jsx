@@ -12,7 +12,6 @@ const ContactSection = () => {
 
   return (
     <>
-
       {/* mi codigo */}
       <section id="contacto" className="scroll-mt-10 space-y-6 gap-6 py-12  px-4">
                 <div className="space-y-3 text-center max-w-xl mx-auto">
